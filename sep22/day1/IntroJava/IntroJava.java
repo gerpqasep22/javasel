@@ -8,6 +8,7 @@ public class IntroJava {
 	public static void main(String[] args) 
 	{
 		System.out.println("Hello Welcome to Java Learning");
+		System.out.println("TEst");
 
 	}
 }

@@ -1,4 +1,4 @@
-package sep22.day7.ListAndSet;
+package sep22.day7_ListAndSet;
 
 
 import java.util.LinkedList;

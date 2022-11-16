@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class OrangeHRMLogin {
 
-	@Test
+	@Test (invocationCount =2)
 	public void orangeHrm() {
 		WebDriverManager.chromedriver().setup();
 		ChromeDriver driver = new ChromeDriver();
@@ -22,7 +22,7 @@ public class OrangeHRMLogin {
 		driver.findElement(By.name("password")).sendKeys("admin123");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		
-		driver.findElement(By.id("path4")).click();
+		driver.findElement(By.xpath("(//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[3]")).click();
 		
 		
 	}

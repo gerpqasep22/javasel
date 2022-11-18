@@ -1,0 +1,23 @@
+package StepDefntn;
+
+import org.openqa.selenium.By;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class sep22_ClickLeave extends BaseClass{
+	
+	@When("Click the Leave link")
+	public void clickLeave()
+	{
+		driver.findElement(By.xpath("(//span[@class='oxd-text oxd-text--span oxd-main-menu-item--name'])[3]")).click();
+		
+	}
+	
+	@Then ("Leave page is displayed")
+	public void leavePage()
+	{
+		String leaveText = driver.findElement(By.xpath("//h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']")).getText();
+		System.out.println(leaveText);
+	}
+}
